@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;/*包含border padding*/
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+input,input:focus,input:active{
+	outline: none;
+}
+h1{
+	font-size: 36px; 
+}
+body{
+	line-height: 1.5;
+}
