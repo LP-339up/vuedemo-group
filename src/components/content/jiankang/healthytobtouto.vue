@@ -8,7 +8,8 @@
         <div class="fudongjvz">
             <div class="yisjkguod-zi">饮食健康首页</div>
             <div class="yisjkguod-zi">头条</div>
-            <div class="yisjkguod-zi">排行</div>
+            <div class="yisjkguod-zi chengshe">排行</div>
+            <div class="yisjkguod-zi">食疗食补</div>
         </div>
         <div class="fudongjvz shouskuainr"><input type="text">
             <div class="shouskuainr-bh fudongjvz">
@@ -19,10 +20,8 @@
 
     <div class="subpage fudongfkai">
         <div class="subpage-right fudongfkai">
-            <div class="subpage-right-zi oranges">首页</div>
-            <div class="subpage-right-zi">饮食常识</div>
-            <div class="subpage-right-zi">瘦身美容</div>
-            <div class="subpage-right-zi">母婴饮食</div>
+            <div class="subpage-right-zi">周一热门</div>
+            <div class="subpage-right-zi oranges">当季最热</div>
         </div>
         <div class="subpage-left">
             <div class="subpage-right-zi">浏览所有文章<i class="el-icon-arrow-down"></i>

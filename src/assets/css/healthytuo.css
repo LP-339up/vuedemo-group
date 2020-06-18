@@ -1,0 +1,123 @@
+.chengshe{
+    color: #ff6767;
+}
+.guangnars{
+    padding-top: 10px;
+}
+.daohlydks{
+    color: #666;
+    font-size: 12px;
+    padding: 10px 0;
+   
+}
+.daohlydksxhx{
+    border-bottom: 1px solid #ccc;
+}
+.fudongfkai-zi{
+    margin: 0 3px;
+}
+.fudongfkai-z{
+    margin: 0 3px;
+}
+.fudongfkai-zi:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.biaotinrs{
+    clear: both;
+    font-size: 32px;
+    margin: 0;
+    padding: 15px 0;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.biaotinrs:hover{
+    color: #ff6767;
+    text-decoration:underline;
+}
+.botycx{
+    border-top: 1px solid #ccc;
+    height: 112px;
+}
+.botycx-orj{
+    color: #f50; 
+    font-size: 14px;
+    cursor: pointer;
+    font-weight:bold;
+}
+.botycx-orj:hover{
+    text-decoration:underline;
+}
+
+.xhunr-ms{
+    font-size: 12px;
+    color: #666; 
+    cursor: pointer;
+    margin: 0 3px;
+}
+.xhunr-msw{
+    font-size: 12px;
+    color: #666; 
+    cursor: pointer;
+    margin: 0 3px;
+}
+.xhunr-ms:hover{
+    color: #f50; 
+    text-decoration:underline;
+}
+.xhunr-img img{
+    height: 82px;
+    width: 82px;
+    margin-left: 25px;
+}
+.biaotinrs-img{
+    margin: 15px 0px;
+}
+.xznrcai{
+    font-size: 14px;
+    color: #ba2020;
+    padding: 0 0 5px 0;
+}
+.xznrcai-zi{
+    color: #333;
+    padding: 0 0 5px 0;
+    cursor: pointer;
+}
+.xznrcai-zi:hover{
+    text-decoration:underline;
+    color: #ff2d52;
+}
+.hedes{
+    height: 300px;
+}
+.el-carousel--horizontal {
+    overflow-x: hidden;
+    height: 225px;
+}
+.el-carousel__item:nth-child(2n+1) {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+  .el-carousel__item:nth-child(2n) {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+.el-carousel__item{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.el-carousel__item img{
+width: 300px;
+}
+.kens{
+  margin: 10px 0;
+}
+.el-carousel__container .el-carousel__arrow--left {
+    left: 16px;
+}

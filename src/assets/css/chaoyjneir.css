@@ -1,0 +1,51 @@
+.feineibo-img{
+    width: 180px;
+    height: 180px;
+    background: #f8f8f8;
+}
+.feineibo-img img{
+    width: 170px;
+    height: 170px;
+    transition: all 0.5s;
+   
+}
+.feineibo:hover .feineibo-img img{
+    transform: scale(1.1);
+}
+.feineibo{
+    margin-top: 30px;
+}
+.feineibo-zi{
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.feineibo-xzi{
+    padding: 0 0 2px 0;
+    color: #999;
+    font-size: 14px;
+}
+.feineibo-zis{
+    width: 430px;
+}
+.feineibo-xi{
+    color: #333;
+    font-size: 14px;
+}
+.cjcjcjs{
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0 25px;
+    height: 30px;
+    border: 1px solid #ff6767;
+    border-radius: 15px;
+    color: #ff6767;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.cjcjcjs:hover{
+    color: #ffffff;
+    background: #ff6767;
+}
