@@ -1,0 +1,50 @@
+.zcneirkuais-he{
+    width: 530px;
+    height: 500px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    left: 504px;
+    top: 200px;
+}
+.zcneirkuais{
+    height: 50px;
+    width: 530px;
+}
+.zcneirkuais-zc{
+    width: 265px;
+    height: 50px;
+    background-color:rgba(243, 244, 247, 0.705);
+    border-bottom: 1px solid rgba(111, 141, 231, 0);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px 0px 0 0;
+}
+.zcneirkuais-zc:hover{
+    text-decoration:underline;
+}
+.zcneirkuais-dl{
+    width: 265px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 0 4px 0 0;
+    color: #fff;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+}
+.zcneirkuais-dl:hover{
+    text-decoration:underline;
+    color: #ff2d52;
+}
+.zcneirkuais-jvti{
+    height: 320px;
+    background-color:rgba(243, 244, 247, 0.705);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-right: 140px;
+    padding-left: 40px;
+}
+.el-input__inner{
+    width: 200px;
+}
