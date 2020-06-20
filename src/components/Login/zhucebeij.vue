@@ -26,6 +26,7 @@ obj.style.backgroundImage= "URL("+arr[curIndex]+")";
     #d1{
         height: 100%;
         width: 100%;
+         background: url(https://i3.meishichina.com/attachment/magic/2015/11/24/201511241448337585505.jpg);
         background-size: cover;
         position: absolute;
         overflow: hidden;

@@ -1,17 +1,30 @@
 <template>
-  <div>
-    <Index></Index>
+  <div id="app">
+    <!-- 头部和导航栏 -->
+  <Top></Top>
+  <daohang v-if="staus == 1"></daohang>
+     <!-- 头部和导航栏结束 -->
+
+  <router-view></router-view>
+
+  <Foot v-if="staus == 1"></Foot>
   </div>
 </template>
 
 <script>
-import Index from './components/content/jiankang/index.vue'
+import Top from '@/components/public/top.vue'
+import daohang from '@/components/public/top-daohang'
+import Foot from '@/components/public/foot.vue'
 export default {
   components: {
-    Index
+    Top,
+    daohang,
+    Foot
+  },
+  computed: {
+    staus () {
+      return this.$store.state.isLogin
+    }
   }
 }
 </script>
-<style lang="less">
-
-</style>

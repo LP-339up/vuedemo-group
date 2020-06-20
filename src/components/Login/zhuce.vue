@@ -1,6 +1,5 @@
 <template>
-<div id="app">
-  <Top></Top>
+<div>
    <Zhucebeij></Zhucebeij>
    <Zhuceneir></Zhuceneir>
 </div>
@@ -18,6 +17,9 @@ import Zhuceneir from './zhuceneir.vue'
     Zhuceneir
 
     },
+     created () {
+    this.$store.commit('changeisLohin', 0)
+  }
   };
 </script>
 <style lang="stylus">
