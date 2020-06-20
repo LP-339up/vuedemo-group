@@ -3,7 +3,6 @@ import Vuerouter from 'vue-router'
 import index from '@/components/index.vue'
 import Login from '@/components/Login/login'
 import zhuce from '@/components/Login/zhuce.vue'
-import xingyemc from '@/components/content/jiankang/xingyemc.vue'
 Vue.use(Vuerouter)
 
 // 编写路由参数
@@ -15,10 +14,7 @@ export default new Vuerouter({
     path: '/login',
     component: Login
   }, {
-    path: '/chuce',
+    path: '/zhuce',
     component: zhuce
-  }, {
-    path: '/xingyemc',
-    component: xingyemc
   }]
 })
