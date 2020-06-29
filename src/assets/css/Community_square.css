@@ -1,0 +1,243 @@
+.nrkdun{
+    margin-top: 40px;
+}
+.tbody{
+    width: 990px;
+    height: 100%;
+    margin: auto;
+}
+/* 导航部分 */
+.info{
+    width: 642px;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+/* 轮播 */
+.lunbo{
+    width: 640px;
+    height: 240px;
+    overflow-y: scroll; 
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    
+}
+.lunbo-A{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.el-carousel__item.is-active {
+    z-index: 2;
+}
+.lunbo-A::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+ .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    display: block;
+    /* line-height: 300px; */
+    height: 240px;
+    margin: 0;
+  }
+#lunbo-yjs .el-carousel__container .lunbo-t h3 img{
+    width: 320px;
+    height: 240px;
+  }
+
+.lunbo-r{
+    width: 303px;
+    height: 240px;
+    float: right;
+    display: block;
+  }
+  .nav-biaoti{
+    width: 285px;
+    height: 60px;
+    float: right;
+  }
+  .nav-biaoti .b-t{
+    font-size: 20px;
+    float: left;
+    width: 285px;
+    height: 60px;
+    overflow: hidden;
+    margin: 15px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  .b-t:hover{
+    color: #ff6767;
+    text-decoration: underline;
+
+  }
+  .lunbo-tx{
+    float: right;
+    width: 285px;
+    margin-top: 5px;
+  }
+  .lunbo-tx　span{
+      font-size:12px ;
+      color: #999;
+  }
+
+.lunbo-tx img{
+    width: 28px;
+    height: 28px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+.p-r{
+    width: 300px;
+    height: 76px;
+    float: left;
+    margin-top: 10px;
+    padding: 0 50px 0 10px;
+    word-break:break-all;
+    
+}
+.p-r p{
+    font-size: 14px;
+    height: 76px;
+    display:-webkit-box;/**对象作为伸缩盒子模型展示**/
+    -webkit-box-orient:vertical;/**设置或检索伸缩盒子对象的子元素的排列方式**/
+    -webkit-line-clamp:3;/**显示的行数**/
+    overflow:hidden;/**隐藏超出的内容**/
+    text-overflow: ellipsis; 
+    line-height: 25px;
+}
+#lunbo-ys{
+    color: #ff6767;
+    text-decoration: underline;
+}
+/* 轮播完 */
+
+
+.nav-hot{
+    width: 640px;
+    height: 36px;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 10px;
+}
+h3{
+    /* width: 80px; */
+    font-size: 20px;
+    height: 36.6px;
+    color: #ff6767;
+    float: left;
+    border-bottom: 3px solid #ff6767;
+}
+.nav-li{
+    float: right;
+    color: #333333;
+    margin-left: 20px;
+    cursor:pointer;
+    margin-top: 10px;
+}
+.nav-li:hover{
+    color: #ff6767;
+}
+/* 内容部分 */
+.Content-list{
+    width: 640px;
+    height: 500px;
+    /* background: blue; */
+    margin-top: 15px;
+}
+.Content-list ul{
+    float: left;
+}
+.Content-list-u{
+    width: 640px;
+    height: 242px;
+    /* background: chartreuse; */
+}
+.head-portrait{
+    width: 100%;
+    height: 40px;
+    /* background: cyan; */
+    /* float: none; */
+}
+.head-portrait .touxiang{
+    float: left;
+}
+.head-portrait .touxiang a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-top: -20px;  */
+}
+.timer-user-name{
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.user-name{
+    font-size: 14px;
+}
+.timer{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.Content-list-u .clesr{
+    width: 640px;
+    height: 100%;
+    /* background: coral; */
+    padding: 5px 0 0 50px;
+}
+.pp{
+    width: 590px;
+    /* background: cornflowerblue; */
+}
+.neirong{
+    font-size: 14px;
+    overflow: hidden;
+    max-height: 45px;
+}
+.clear{
+    height: 110px;
+    position: relative;
+    float: left;
+    padding: 10px 0 0;
+}
+.neirongtupian{
+    height: 110px;
+}
+.imgLoad{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    left: 0;
+}
+.clear b{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+ .pppp{
+    float: left;
+    clear: both;
+    padding: 10px 0 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 100%;
+}
+
+/* 广告部分 */
+.advertisement{
+    width: 300px;
+    height: 100%;
+    float: right;
+    border: 1px solid red;
+}

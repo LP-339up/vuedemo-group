@@ -17,13 +17,10 @@ import Zhuceneir from './zhuceneir.vue'
     Zhuceneir
 
     },
-     created () {
-    this.$store.commit('changeisLohin', 0)
-  }
   };
 </script>
 <style lang="stylus">
 @import url("//unpkg.com/element-ui@2.13.2/lib/theme-chalk/index.css");
 @import '~@/assets/css/zhuce.css';
 @import '~@/assets/css/Public-head.css';
-</style>
+  </style>

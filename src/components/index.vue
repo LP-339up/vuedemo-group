@@ -1,7 +1,7 @@
 <template>
 <div>
+<daohang></daohang>
 <lunbo></lunbo>
-<lunbotext></lunbotext>
 <tab></tab>
 <backtop></backtop>
 </div>
@@ -10,14 +10,14 @@
 
 <script>
 import lunbo from '@/components/public/lunbo.vue'
-import lunbotext from '@/components/public/shouye-lunbo-3'
 import tab from '@/components/public/shouye/tab.vue'
 import backtop from '@/components/public/shouye/backtop.vue'
+import daohang from '@/components/public/top-daohang'
 export default {
   components: {
     lunbo,
-    lunbotext,
     tab,
+    daohang,
     backtop
   }
 }

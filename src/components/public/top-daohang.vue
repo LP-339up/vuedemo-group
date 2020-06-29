@@ -8,7 +8,7 @@
                             <span class="red">首页</span>
                             <span class="top-nav-text-s">菜谱</span>
                             <span class="top-nav-text-s">社区</span>
-                            <span class="top-nav-text-s">健康</span>
+                            <router-link to='xingyemc'><span class="top-nav-text-s">健康</span></router-link>
                         </div>
                         <div class="top-nav-input fr">
                             <input type="text">

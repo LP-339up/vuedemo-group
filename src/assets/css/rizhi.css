@@ -1,0 +1,64 @@
+.nrkdun{
+    margin-top: 40px;
+}
+.journal-a{
+    width : 990px;
+    height: 1000px;
+    padding: 10px 0;
+}
+.journal-left{
+    width: 640px;
+    height: 100%;
+    float: left;
+}
+.journal-left ul li{
+    width: 640px;
+    height: 155px;
+    padding: 16px 0 0 0px;
+    /* background: red; */
+}
+.img{
+    width: 180px;
+    height: 135px;
+    display: block;
+    float: left;
+    overflow-x:hidden; 
+    overflow-y:hidden; 
+}
+.journal-left ul li .img img{
+    width: 180px;
+    height: 135px;
+    transition: all 0.8s;
+}
+.journal-left ul li:hover .img img{
+    transform: scale(1.1);
+}
+.wenzi-right{
+    width: 440px;
+    height: 135px;
+    margin-left: 20px;
+    display: block;
+    float: left;
+}
+.wenzi-right h2{
+    padding: 3px 0 10px 0;
+}
+.rizhi-time{
+    color: #999;
+    font-size: 14px;
+}
+.jieshao{
+    color: #333;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.journal-right{
+    width: 300px;
+    height: 100%;
+    border:  #000;
+    float: right;
+}
+

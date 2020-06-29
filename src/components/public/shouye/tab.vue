@@ -27,7 +27,7 @@
         </el-tab-pane>
         <el-tab-pane  label="食疗" name="third">
             <div >
-                <div :key="keys" v-for="(item, keys) in lists" class="ee fl">{{item.texts}}</div>
+                <div :key=" keys" v-for="(item, keys) in lists" class="ee fl">{{item.texts}}</div>
             </div>
         </el-tab-pane>
   </el-tabs>
@@ -50,10 +50,10 @@
           <el-tab-pane label="新秀菜谱" name="second">
             <div class="ff">
               <ul class="gg">
-                <li :key="contentimgs" v-for="(item, contentimgs) in contentimg" class="hh margin-20-r fl">
-                  <div class="ii"><img :src=item.contentimg></div>
-                  <div class="ii-aa">{{item.contenttext}}</div>
-                  <div class="ii-bb">{{item.contentzusi}}</div>
+                <li :key="i" v-for="(item, i) in contentimg" class="hh margin-20-r fl">
+                  <div class="ii"><img :src="'http://192.168.85.207:3000/'+item.img_url"></div>
+                  <div class="ii-aa">{{item.banner_title}}</div>
+                  <div class="ii-bb">一掉去了啦</div>
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@
           <el-tab-pane label="时令食材" name="first">
             <div class="gg clearfix">
               <div :key="ll" v-for="(item, ll) in llgg" class="ll fl">
-                <div class="pp"> <img :src=item.ggimg ></div>
+                <div class="pp"> <img :src="item.ggimg" ></div>
                 <a class="pp-text">{{item.ggtext}}</a>
                 <a class="pp-text-2">{{item.ggtext2}}</a>
               </div>
@@ -160,7 +160,7 @@
 }
 .ff{
   width: 100%;
-  height: 1525px;
+  // height: 1525px;
   .hh{
     width: 227px;
     height: 305px;
@@ -198,7 +198,7 @@
 }
 .gg{
   width:100%;
-  height: 370px;
+  // height: 370px;
   // background: chartreuse;
   .ll{
     width: 126px;
@@ -257,6 +257,7 @@
 }
 </style>
 <script>
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -292,87 +293,13 @@ export default {
       }, {
         texts: '瘦身'
       }],
+      // 新秀菜谱图片列表
       contentimg: [{
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/18/2020061815924857681968197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
-      }, {
-        contentimg: 'https://i3.meishichina.com/attachment/recipe/2020/06/17/2020061715923898755048197577.jpg?x-oss-process=style/c320',
-        contenttext: '凉拌蟹肉',
-        contentzusi: '杨丽的家常菜谱'
+        contentimg: '',
+        contenttext: '',
+        contentzusi: '小强'
       }],
+      // 时令食材
       llgg: [{
         ggimg: 'https://static.meishichina.com/img/shicai/xigua.jpg',
         ggtext: '西瓜',
@@ -446,6 +373,22 @@ export default {
     handleClick (tab, event) {
       console.log(tab, event)
     }
+  },
+  created () {
+    axios({
+      methods: 'get',
+      url: '/api/getBanner' // 接口名可以改
+    }).then((res) => {
+      // 成功的回调函数 （既可以带数据去，也可以带数据回来，带去的数据是前台的，带回的数据是请求
+      // 成功后，后台给的）
+      console.log(res)
+      this.contentimg = res.data.data.list
+      console.log(this.contentimg)
+    }).catch((err) => {
+    // 请求失败的回调
+    // 打印错误
+      console.error(err)
+    })
   }
 }
 </script>

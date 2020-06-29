@@ -37,6 +37,7 @@ export default {
         }, 30)
       }
     }
+    return {}
   }
 }
 

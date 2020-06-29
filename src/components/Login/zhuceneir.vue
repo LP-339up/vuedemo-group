@@ -2,11 +2,11 @@
     <div class="zcneirkuais-he">
         <div class="fudongjvz zcneirkuais">
             <div class="fudongjvz zcneirkuais-zc">注册</div>
-            <div class="fudongjvz zcneirkuais-dl">登录</div>
+            <router-link to='login'><div class="fudongjvz zcneirkuais-dl">登录</div></router-link>
         </div>
         <div class="zcneirkuais-jvti">
             <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
- <div> <el-form-item label="您的账号" prop="name">
+ <div> <el-form-item label="您的账号" prop="name" id="btn2">
     <el-input v-model="ruleForm.name"></el-input>
   </el-form-item>
   </div>
@@ -77,7 +77,7 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            alert('submit!');
+            alert('注册成功');
           } else {
             console.log('error submit!!');
             return false;

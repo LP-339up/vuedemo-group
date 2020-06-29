@@ -1,6 +1,6 @@
 <template>
 <div class="w-990 ">
-    <el-carousel :interval="5000" arrow="always" class="p">
+    <el-carousel :interval="5000" arrow="always" class="p" id="sheada">
       <div class="q">
         <div class="q-txt">菜谱大全 <span class="el-icon-arrow-right q-span"></span>
         <div class="q-txt-q clearfix">
@@ -42,14 +42,21 @@
     color: #475669;
     font-size: 18px;
     opacity: 0.75;
-    line-height: 300px;
     margin: 0;
   }
+  .el-carousel--horizontal {
+    overflow-x: hidden;
+    height: 300px;
+  }
+  .el-carousel__item h3 img{
+        height: 300px;
+       width: 990px;
+  }
   .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
+
   }
   .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
+
   }
 .p{
   position: relative;
@@ -106,6 +113,20 @@
 }
 .q-txt-q-lists:hover{
 color: #ff6767;
+}
+#sheada{
+  height: 300px;
+}
+#sheada .el-carousel__container .el-carousel__arrow.el-carousel__arrow--left{
+  left: 220px;
+}
+#sheada .el-carousel__container .el-carousel__item:nth-child(2n){
+   display:block;
+   height: 300px;
+}
+#sheada .el-carousel__container .el-carousel__item:nth-child(2n+1){
+   display:block;
+   height: 300px;
 }
 </style>
 <script>

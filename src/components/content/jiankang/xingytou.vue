@@ -34,9 +34,12 @@ import Healhyjtnrtuo from './healhyjtnrtuo'
       Healhybodd,
       Top
     },
+           created () {
+    this.$store.commit('changeisLohin', 0)
+  },
   };
 </script>
-<style lang="stylus">
+<style>
 @import url("//unpkg.com/element-ui@2.13.2/lib/theme-chalk/index.css");
 @import '~@/assets/css/Public-head.css';
 @import '~@/assets/css/jiankangs.css';

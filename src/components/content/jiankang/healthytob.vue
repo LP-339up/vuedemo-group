@@ -6,9 +6,9 @@
             <div class="yisjkguod">饮食健康</div>
         </div>
         <div class="fudongjvz">
-            <div class="yisjkguod-zi">饮食健康首页</div>
-            <div class="yisjkguod-zi">头条</div>
-            <div class="yisjkguod-zi">排行</div>
+            <router-link to='xingyemc'><div class="yisjkguod-zi">饮食健康首页</div></router-link>
+            <router-link to='xingytou'><div class="yisjkguod-zi">头条</div></router-link>
+            <router-link to='xingytsun'><div class="yisjkguod-zi">排行</div></router-link>
         </div>
         <div class="fudongjvz shouskuainr"><input type="text">
             <div class="shouskuainr-bh fudongjvz">

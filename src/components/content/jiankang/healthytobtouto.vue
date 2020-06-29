@@ -6,10 +6,9 @@
             <div class="yisjkguod">饮食健康</div>
         </div>
         <div class="fudongjvz">
-            <div class="yisjkguod-zi">饮食健康首页</div>
-            <div class="yisjkguod-zi">头条</div>
-            <div class="yisjkguod-zi chengshe">排行</div>
-            <div class="yisjkguod-zi">食疗食补</div>
+            <router-link to='xingyemc'><div class="yisjkguod-zi">饮食健康首页</div></router-link>
+            <router-link to='xingytou'><div class="yisjkguod-zi">头条</div></router-link>
+            <router-link to='xingytsun'><div class="yisjkguod-zi">排行</div></router-link>
         </div>
         <div class="fudongjvz shouskuainr"><input type="text">
             <div class="shouskuainr-bh fudongjvz">
@@ -20,7 +19,7 @@
 
     <div class="subpage fudongfkai">
         <div class="subpage-right fudongfkai">
-            <div class="subpage-right-zi">周一热门</div>
+            <router-link to='xingytsun'><div class="subpage-right-zi">一周热门</div></router-link>
             <div class="subpage-right-zi oranges">当季最热</div>
         </div>
         <div class="subpage-left">

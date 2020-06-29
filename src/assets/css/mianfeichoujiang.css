@@ -1,0 +1,22 @@
+.nrkdun{
+    margin-top: 40px;
+}
+.journal-a{
+    width : 990px;
+    height: 990px;
+    /* background: red; */
+    padding: 10px 0;
+}
+.journal-left{
+    width: 640px;
+    height: 100%;
+    float: left;
+    /* background: royalblue; */
+}
+
+.journal-right{
+    width: 300px;
+    height: 100%;
+    border: 1px solid #000;
+    float: right;
+}

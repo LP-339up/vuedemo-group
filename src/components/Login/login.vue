@@ -1,20 +1,20 @@
 <template>
   <div>
-      <div class="login-height m-40-t">
+      <div class="login-height">
        <div class="login-bg">
-        <div class="login-bg-img"></div>
+        <Zhucebeij></Zhucebeij>
        </div>
      </div>
      <div class="login-login ">
        <div class="clearfix">
-         <div class="login-zhu fl">注册</div>
+         <router-link to='zhuce'><div class="login-zhu fl">注册</div></router-link>
        <div class="login-deng fr">登录</div>
        </div>
         <div class="clearfix">
        <div class="margin-20-t fl">
          <div class="login-deng-ipt">
            <div>
-            <el-input class="border" placeholder="手机号/昵称"></el-input>
+            <el-input class="border" placeholder="手机号/昵称" v-model="ruleForm.name"></el-input>
         <el-input class="border-l" placeholder="请输入密码"  v-model="mima" show-password></el-input>
            </div>
            <div class="margin-10-t aa">
@@ -38,6 +38,13 @@
 .login-btn{
 width: 300px;
 height: 40px;
+}
+.login-zhu{
+color: #ffffff;
+}
+.login-zhu:hover{
+  color:#ff2d52;
+text-decoration:underline;
 }
 /* 下次登录 */
 .aa .el-checkbox{
@@ -156,16 +163,26 @@ background: rgba(255,255,255,.8);
 </style>
 
 <script>
+import Zhucebeij from './zhucebeij.vue'
 export default {
+  components: {
+    Zhucebeij
+  },
   data () {
     return {
       input: '',
       mima: '',
-      checked: false
+      checked: false,
+      ruleForm: {
+        name: ''
+      },
+      rules: {
+        name: [
+          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { min: 7, max: 14, message: '长度在 7 到 14 个字符', trigger: 'blur' }
+        ]
+      }
     }
-  },
-  created () {
-    this.$store.commit('changeisLohin', 0)
   }
 }
 </script>
