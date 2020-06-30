@@ -20,7 +20,7 @@
            <div class="margin-10-t aa">
              <el-checkbox v-model="checked">下次自动登录</el-checkbox>
            </div>
-           <div class="margin-20-t"><el-button class="login-btn" type="danger">登录</el-button></div>
+           <router-link to='/'><div class="margin-20-t"><el-button class="login-btn" type="danger">登录</el-button></div></router-link>
          </div>
        </div>
        <div class="login-erweima fr margin-20-t margin-10-r">

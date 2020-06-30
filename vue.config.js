@@ -1,18 +1,3 @@
-module.exports = {
-  devServer: {
-    // 代理
-    proxy: {
-      '/api': {
-        changeOrigin: true,
-        target: 'http://192.168.85.207:3000/',
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
-  }
-}
-
 const { resolve } = require('path')
 module.exports = {
   lintOnSave: 'warning',
@@ -25,7 +10,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/',
+        target: 'http://192.168.85.207:3000/',
         chageOrigin: true,
         pathRewrite: {
           '^/api': ''

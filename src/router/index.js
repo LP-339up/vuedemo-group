@@ -12,6 +12,8 @@ import huodong from '@/components/content/shequ/huodong.vue'
 import mianfeichoujiang from '@/components/content/shequ/mianfeichoujiang.vue'
 import rizhi from '@/components/content/shequ/rizhi.vue'
 import xianshanghuodong from '@/components/content/shequ/xianshanghuodong.vue'
+import xingytxqym from '@/components/content/jiankang/xingytxqym.vue'
+
 Vue.use(Vuerouter)
 
 // 编写路由参数
@@ -52,5 +54,8 @@ export default new Vuerouter({
   }, {
     path: '/xianshanghuodong',
     component: xianshanghuodong
+  }, {
+    path: '/xingytxqym',
+    component: xingytxqym
   }]
 })
