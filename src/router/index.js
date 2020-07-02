@@ -13,7 +13,12 @@ import mianfeichoujiang from '@/components/content/shequ/mianfeichoujiang.vue'
 import rizhi from '@/components/content/shequ/rizhi.vue'
 import xianshanghuodong from '@/components/content/shequ/xianshanghuodong.vue'
 import xingytxqym from '@/components/content/jiankang/xingytxqym.vue'
-
+import Menber from '@/components/member/Index/index.vue'
+import MenberIndex from '@/components/member/Right/menberc.vue'
+import Menu from '@/components/member/Right/menutwo.vue'
+import Accoun from '@/components/member/Right/accountsetting.vue'
+import Collect from '@/components/member/Right/collect.vue'
+import Menuone from '@/components/member/Right/menuone.vue'
 Vue.use(Vuerouter)
 
 // 编写路由参数
@@ -57,5 +62,24 @@ export default new Vuerouter({
   }, {
     path: '/xingytxqym',
     component: xingytxqym
+  }, {
+    path: '/menber',
+    component: Menber, 
+    children: [{
+      path: '',
+      component: MenberIndex
+    }, {
+      path: '/menutwo',
+      component: Menu
+    }, {
+      path: '/accountsetting',
+      component: Accoun
+    }, {
+      path: '/collect',
+      component: Collect
+    }, {
+      path: 'menuone',
+      component: Menuone
+    }]
   }]
 })
